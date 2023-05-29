@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="prism.css">
+    <script src=prism.js></script>
+    <title>HTML CHEATSHEET</title>
+</head>
+<body>
+
+    <nav>
+        <span class="logo" ><img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Code.svg" alt="Closing Tag Image">  </span>
+            <div class="content center">
+                Web Development cheatsheet. 
+            </div>
+
+       
+    </nav>
+
+<h1 class="HTML code"> HTML Syntax
+    <div class="container"> 
+        <ol>  <li class="packing"> HTML BOILERPLATE</li>
+            <pre class="language-html"><code>
+&lt;!DOCTYPE html&GT;
+&LT;html lang="en"&GT;
+&LT;head&GT;
+&LT;meta charset="UTF-8"&GT;
+&LT;meta http-equiv="X-UA-Compatible" content="IE=edge"&GT;
+&LT;meta name="viewport" content="width=device-width, initial-scale=1.0"&GT;
+&LT;title&GT;Document&LT;/title&GT;
+&LT;/head&GT;
+&LT;body&GT;
+                    
+&LT;/body&GT;
+&LT;/html&GT;                                                                                                                                    
+            </code></pre>
+            
+            <LI class="packing"> EXTARNAL RESOURCES:</LI>
+         SCRIPT TAG- 
+         <pre class="language-html"><code>
+&lt;script src=filename.extention&gt; &lt;/script&gt;</code></pre>
+
+LINK TAG-  
+<pre class="language-html"><code>
+&lt;Link rel="relation with code" href="referance file or link"&gt; 
+</code></pre>
+
+IMAGE TAG-
+<pre class="language-html"><code>
+&lt;img src="filename.extention/file link" alt="alternate text"&gt;
+</code></pre>
+
+iframe-
+<pre class="language-html"><code>
+    &lt;iframe src="url" title="description"&gt;&lt;/iframe&gt;
+</code></pre>
+
+Video Tag-
+<pre class="language-html"><code>
+    &lt;video width="320" height="240" controls&gt;
+    &lt;source src="movie.mp4" type="video/mp4"&gt;
+    &lt;source src="movie.ogg" type="video/ogg"&gt;
+    Your browser does not support the video tag.
+    &lt;/video&gt;
+</code></pre>
+
+Audio Tag-
+<pre class="language-html"><code>
+    &lt;audio controls&gt;
+    &lt;source src="horse.ogg" type="audio/ogg"&gt;
+    &lt;source src="horse.mp3" type="audio/mpeg"&gt;
+        Your browser does not support the audio tag.
+        &lt;/audio&gt;
+</code></pre>
+
+<LI class="packing"> Basic Tags:</LI>
+Heading Tags-
+<pre class="language-html"><code>
+&LT;h1&GT; TEXT&LT;/h1&GT;
+</code></pre>
+
+PARAGRAPH TAG-
+<pre class="language-html"><code>
+&LT;P&GT; LOREM IPSUM&LT;/P&GT;
+</code></pre>
+
+comments-
+<pre class="language-html"><code>
+&LT;!-- Write your comments here --&GT;
+</code></pre>
+
+LIST TAG-
+<pre class="language-html"><code>
+UNORDERD:
+    &LT;ul&GT;&LT;li&GT;Coffee&LT;/li&GT;&LT;li&GT;TEA&LT;/li&GT;&LT;/ul&GT;
+
+ORDERED:
+    &LT;Ol&GT;&LT;li&GT;Coffee&LT;/li&GT;&LT;li&GT;TEA&LT;/li&GT;&LT;/Ol&GT;
+</code></pre>
+        </ol>
+    </div>
+</h1>
+
+<H2 class="CSSCODE"> CSS Syntax- 
+    <div class="stylesheet">
+        <pre class="language-stylesheet"><code> 
+selector/element{property:value;}
+example- h1{color:red;}
+        </pre></code>
+
+        Inline CSS- 
+        <pre class="language-stylesheet"><code>
+     &LT;tag style="property:value;"&GT;&LT;/h1&GT;
+     example- &LT;h1 style="color:red;"&GT;&LT;/h1&GT;
+        </code></pre>
+
+        CSS COMMENTS-
+       <pre class="language-stylesheet"><code>
+        /* This is a single-line comment */
+       </code></pre>
+
+       CSS BORDERS-
+       <pre class="language-stylesheet"><code>
+        {border-style:dotted;
+          border-width:5px;
+          border-color:red;
+        }
+       </code></pre>
+
+       <div class="cssconversions">  <table style="width:50%" > css conversions-
+            <tr>
+              <th>UNIT</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>px</td>
+              <td>1/96th of 1in</td>
+            </tr>
+            <tr>
+                <td>cm</td>
+                <td>centimeters</td>
+              </tr>
+          <tr>
+            <td>cm</td>
+            <td>centimeters</td>
+          </tr>
+          <tr>
+            <td>mm</td>
+            <td>millimeters</td>
+          </tr>
+          <tr>
+            <td>pt</td>
+            <td>point (1pt=1/72 of inch)</td>
+          </tr>
+          <tr>
+            <td>em</td>
+            <td>em*font-size</td>
+          </tr>
+          <tr>
+            <td>rem</td>
+            <td>relative to font-size of root element</td>
+          </tr>
+          <tr>
+            <td>vw</td>
+            <td>relative to 1% of the width of viewport</td>
+          </tr>
+          <tr>
+            <td>vh</td>
+            <td>relative to 1% of the hight of viewport</td>
+          </tr>
+          <tr>
+            <td>vmin</td>
+            <td>Relative to 1% of viewport's* smaller dimension</td>
+          </tr>
+          <tr>
+            <td>vmax</td>
+            <td>Relative to 1% of viewport's* larger dimension</td>
+          </tr>
+      </table></div>
+      
+        css margin-
+        <div class="cssmargin">
+          <pre class="language-stylesheet"><code>
+            {
+              margin: top right bottom left;
+            }
+          </code></pre>
+          Media Query-
+          <pre class="language-stylesheet"><code>
+            @media screen and (display argument) {
+              css code/changes
+            }
+          </code></pre>
+          <pre class="language-"><code></code></pre>
+        </div>
+</div>
+    </div>
+    
+</H2>
+</body>
+</html>
